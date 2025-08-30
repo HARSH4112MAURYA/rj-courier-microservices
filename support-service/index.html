@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Service | RJ Couriers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>💬 Support Service</h1>
+        <p>Submit your queries or issues, and we’ll assist you</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Submit a Support Ticket</h2>
+            <form id="supportForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="issue" placeholder="Describe your issue" rows="4" required></textarea>
+                <button type="submit">Submit Ticket</button>
+            </form>
+            <p id="message" class="message"></p>
+        </div>
+
+        <div class="card">
+            <h2>Submitted Tickets</h2>
+            <ul id="ticketList"></ul>
+        </div>
+
+        <a class="back-link" href="../gateway/index.html">⬅ Back to Gateway</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RJ Couriers | Support Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

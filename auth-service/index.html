@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Service | RJ Couriers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🔑 Authentication Service</h1>
+        <p>Please login or register to continue</p>
+    </header>
+
+    <main>
+        <div class="auth-tabs">
+            <button id="loginTab" class="active">Login</button>
+            <button id="registerTab">Register</button>
+        </div>
+
+        <div class="auth-container">
+            <!-- Login Form -->
+            <div class="card" id="loginBox">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div class="card hidden" id="registerBox">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <input type="text" id="regName" placeholder="Full Name" required>
+                    <input type="email" id="regEmail" placeholder="Email" required>
+                    <input type="password" id="regPassword" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <a class="back-link" href="../gateway/index.html">⬅ Back to Gateway</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RJ Couriers | Auth Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

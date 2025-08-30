@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipment Service | RJ Couriers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>📦 Shipment Service</h1>
+        <p>Book and track your shipments easily</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Book a Shipment</h2>
+            <form id="shipmentForm">
+                <input type="text" id="senderName" placeholder="Sender Name" required>
+                <input type="text" id="receiverName" placeholder="Receiver Name" required>
+                <input type="text" id="pickup" placeholder="Pickup Location" required>
+                <input type="text" id="destination" placeholder="Destination" required>
+                <input type="number" id="weight" placeholder="Weight (kg)" required>
+                <input type="number" id="distance" placeholder="Distance (km)" required>
+                <button type="submit">Calculate & Book</button>
+            </form>
+            <p id="result" class="result"></p>
+        </div>
+
+        <a class="back-link" href="../gateway/index.html">⬅ Back to Gateway</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RJ Couriers | Shipment Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

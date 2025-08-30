@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Service | RJ Couriers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>📦 Tracking Service</h1>
+        <p>Track your shipment with a Tracking ID</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Enter Tracking ID</h2>
+            <form id="trackingForm">
+                <input type="text" id="trackingId" placeholder="Enter Tracking ID" required>
+                <button type="submit">Track</button>
+            </form>
+            <p id="message" class="message"></p>
+        </div>
+
+        <div class="card" id="resultCard" style="display: none;">
+            <h2>Shipment Status</h2>
+            <p id="trackingResult"></p>
+        </div>
+
+        <a class="back-link" href="../gateway/index.html">⬅ Back to Gateway</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RJ Couriers | Tracking Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
