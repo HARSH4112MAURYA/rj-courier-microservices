@@ -33,7 +33,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
   if (email in demoAccounts && demoAccounts[email] === password) {
     alert(`✅ Login successful as ${email}`);
     localStorage.setItem("loggedIn", "true"); // Save login status
-    window.location.href = "../gateway/index.html"; // Redirect to gateway
+    window.location.href = "../index.html"; // Redirect to gateway
   } else {
     alert("❌ Invalid email or password. Try again.");
   }
